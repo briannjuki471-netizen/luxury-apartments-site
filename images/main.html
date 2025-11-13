@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INNIT Apartments</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>INNIT Apartments</h2>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#apartments">Apartments</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Modern Living. Exceptional Comfort.</h1>
+    <p>Discover luxury apartments that feel like home.</p>
+    <a href="#apartments" class="btn">View Apartments</a>
+  </div>
+</section>
+
+<section id="apartments" class="apartments">
+  <h2>Featured Apartments</h2>
+  <div class="apt-gallery">
+    <div class="apt-card">
+      <div class="apt-images">
+        <img src="https://source.unsplash.com/400x300/?apartment,living" alt="Living Room">
+        <img src="https://source.unsplash.com/400x300/?apartment,bedroom" alt="Bedroom">
+        <img src="https://source.unsplash.com/400x300/?apartment,kitchen" alt="Kitchen">
+        <img src="https://source.unsplash.com/400x300/?apartment,bathroom" alt="Bathroom">
+      </div>
+      <h3>Golden Suites</h3>
+      <p>Nairobi • Ksh 120,000/mo</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="apt-card">
+      <div class="apt-images">
+        <img src="https://source.unsplash.com/400x300/?apartment,city" alt="City View">
+        <img src="https://source.unsplash.com/400x300/?apartment,balcony" alt="Balcony">
+        <img src="https://source.unsplash.com/400x300/?apartment,interior" alt="Interior">
+        <img src="https://source.unsplash.com/400x300/?apartment,lounge" alt="Lounge">
+      </div>
+      <h3>Elite Towers</h3>
+      <p>Westlands • Ksh 95,000/mo</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-list">
+    <div><h3>Furnished Units</h3><p>Elegant interiors for ultimate comfort.</p></div>
+    <div><h3>24/7 Security</h3><p>Professional security for peace of mind.</p></div>
+    <div><h3>Fast Internet</h3><p>Stay connected at all times.</p></div>
+    <div><h3>Cleaning & Laundry</h3><p>Convenient and reliable service.</p></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>INNIT Apartments provides premium living spaces combining style, convenience, and comfort. We offer furnished and unfurnished units to meet every lifestyle and budget.</p>
+</section>
+
+<section id="reviews" class="reviews">
+  <h2>What Our Clients Say</h2>
+  <div class="review-grid">
+    <div><p>“Beautiful place and great management.”</p><span>- Kevin M.</span></div>
+    <div><p>“I love the design and location.”</p><span>- Alice K.</span></div>
+    <div><p>“Spacious and modern, worth every coin.”</p><span>- Brian N.</span></div>
+    <div><p>“Professional service and quick support.”</p><span>- Sarah T.</span></div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> INNIT Apartments. All Rights Reserved.</p>
+</footer>
+
+<div id="bookingModal" class="modal-hidden">
+  <div class="modal-content">
+    <span id="modalClose" class="modal-close">&times;</span>
+    <h3>Request a Viewing</h3>
+    <form id="bookForm">
+      <input type="text" id="bookName" placeholder="Your Name" required>
+      <input type="email" id="bookEmail" placeholder="Your Email" required>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

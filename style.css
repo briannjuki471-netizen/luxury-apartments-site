@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fdfaf6;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #2c2c2c;
+  color: #d4af37;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { font-size: 24px; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover { color: #d4af37; }
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url("images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 { font-size: 42px; margin-bottom: 15px; }
+.hero p { font-size: 18px; margin-bottom: 20px; }
+
+/* BUTTON */
+.btn {
+  background: #d4af37;
+  color: #2c2c2c;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover { background: #bfa137; }
+
+/* APARTMENTS */
+.apartments {
+  padding: 50px;
+  text-align: center;
+}
+
+.apt-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.apt-card {
+  background: #fff9f2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 380px;
+}
+
+.apt-slider img {
+  width: 100%;
+  height: 220px;
+  display: none;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.apt-slider img.active { display: block; }
+
+.apt-card h3 {
+  margin: 15px 10px 5px;
+  color: #2c2c2c;
+}
+
+.apt-card p {
+  margin: 0 10px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.book-btn {
+  margin-top: auto;
+  margin-bottom: 10px;
+  width: calc(100% - 20px);
+  align-self: center;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px;
+  background: #f8f5ef;
+  text-align: center;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* ABOUT */
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+}
+
+/* MODAL */
+#bookingModal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  position: relative;
+}
+
+#modalClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* LOGIN PAGE */
+.auth-body {
+  background: linear-gradient(120deg, #2c2c2c, #4d4d4d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background: #fff9f2;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.brand { color: #d4af37; margin-bottom: 15px; }
+
+.form-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hidden { display: none; }
