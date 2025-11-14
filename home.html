@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>INNIT Apartments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>INNIT Apartments</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#apartments">Apartments</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About & Contact</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to INNIT Apartments</h1>
+      <p>Modern, affordable, and luxurious living in Nairobi.</p>
+      <a href="#apartments" class="btn">Explore Apartments</a>
+    </div>
+  </section>
+
+  <section id="apartments" class="apartments">
+    <h2>Featured Apartments</h2>
+    <div class="apt-gallery">
+
+      <div class="apt-card">
+        <div class="apt-slider">
+          <img src="images/apt1 outside.jpg" class="active" alt="">
+          <img src="images/apt 1sitting.jpeg" alt="">
+          <img src="images/apt 1bedroom.jpg" alt="">
+        </div>
+        <h3>Golden Suites</h3>
+        <p>G Town• Ksh 30000 / month</p>
+        <button class="book-btn btn">Book Now</button>
+      </div>
+
+      <div class="apt-card">
+        <div class="apt-slider">
+          <img src="images/apt outside 2.jpeg" class="active" alt="">
+          <img src="images/apt 2bedroom.jpg" alt="">
+          <img src="images/apt 2balcony.jpg" alt="">
+        </div>
+        <h3>Elite Towers</h3>
+        <p>Kangaru • Ksh 40,000 / month</p>
+        <button class="book-btn btn">Book Now</button>
+      </div>
+
+      <div class="apt-card">
+        <div class="apt-slider">
+          <img src="images/apt 3outside.jpg" class="active" alt="">
+          <img src="images/apt 3sitting.jpg" alt="">
+          <img src="images/apt3 bedroom.jpg" alt="">
+        </div>
+        <h3>Skyline Residences</h3>
+        <p>Njukiri • Ksh 35,000 / month</p>
+        <button class="book-btn btn">Book Now</button>
+      </div>
+
+      <div class="apt-card">
+        <div class="apt-slider">
+          <img src="images/apt 4outside.jpg" class="active" alt="">
+          <img src="images/apt 4sitting .jpg" alt="">
+          <img src="images/apt 4bedroom.jpg" alt="">
+        </div>
+        <h3>Park View Apartments</h3>
+        <p>Mutunduri • Ksh 50,000 / month</p>
+        <button class="book-btn btn">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div><h4>24/7 Security</h4><p>Safe and secure living environment.</p></div>
+      <div><h4>Cleaning</h4><p>Weekly apartment cleaning services.</p></div>
+      <div><h4>Maintenance</h4><p>Fast and efficient support for repairs.</p></div>
+      <div><h4>Free Wi-Fi</h4><p>Reliable internet for work and entertainment.</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About INNIT Apartments</h2>
+    <p>Modern, luxurious apartments with flexible payment and 24/7 support.</p>
+
+    <div class="contact-grid">
+      <div><h4>📍 Office Location</h4><p>Nairobi, Kenya</p></div>
+      <div><h4>📞 Phone</h4><p><a href="tel:+254712345678">+254 712 345 678</a></p></div>
+      <div><h4>📧 Email</h4><p><a href="mailto:info@innitapartments.com">info@innitapartments.com</a></p></div>
+      <div><h4>🕓 Working Hours</h4><p>Mon–Sat: 8AM–6PM</p></div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>Client Reviews</h2>
+    <div class="review-grid">
+      <div><p>“Clean, elegant, and peaceful environment.”</p><b>— Mary K.</b></div>
+      <div><p>“Excellent management and fast maintenance.”</p><b>— Alex M.</b></div>
+      <div><p>“Booking was simple and smooth.”</p><b>— Sarah L.</b></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> INNIT Apartments. All rights reserved.</p>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal">
+    <div class="modal-content">
+      <span id="modalClose">&times;</span>
+      <h3>Book Viewing</h3>
+      <form id="bookForm">
+        <input type="text" id="bookName" placeholder="Your Name" required>
+        <input type="email" id="bookEmail" placeholder="Your Email" required>
+        <button type="submit" class="btn">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -6,12 +6,11 @@ const showLogin = document.getElementById("showLogin");
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 
-// Pre-registered users
+
 let users = [
   {name:"Test User", email:"test@innit.com", password:"123456"}
 ];
 
-// Toggle forms
 showRegister.addEventListener("click", () => {
   loginBox.classList.add("hidden");
   registerBox.classList.remove("hidden");
@@ -22,7 +21,7 @@ showLogin.addEventListener("click", () => {
   loginBox.classList.remove("hidden");
 });
 
-// Registration
+
 registerForm.addEventListener("submit", e => {
   e.preventDefault();
   const name = document.getElementById("regName").value.trim();
@@ -41,7 +40,7 @@ registerForm.addEventListener("submit", e => {
   loginBox.classList.remove("hidden");
 });
 
-// Login
+
 loginForm.addEventListener("submit", e => {
   e.preventDefault();
   const email = document.getElementById("loginEmail").value.trim();
