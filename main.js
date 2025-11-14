@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearSpan = document.getElementById("year");
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-  // Apartment sliders
+  
   const sliders = document.querySelectorAll(".apt-slider");
   sliders.forEach(slider => {
     let index = 0;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 
-  // Booking modal
+  
   const bookingModal = document.getElementById("bookingModal");
   const modalClose = document.getElementById("modalClose");
   const bookBtns = document.querySelectorAll(".book-btn");
